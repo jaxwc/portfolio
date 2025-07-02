@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Github, Linkedin, File } from "lucide-react";
 
 const links = [
   {

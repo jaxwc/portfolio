@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 type Experience = {
   company: string;
   role: string;
