@@ -25,10 +25,10 @@ export function Header() {
         </div>
       </h2>
       <p className="leading-relaxed text-indigo-300">
-        i'm a 21 y/o cs undergrad student at texas tech university. i love
+        i`&apos;`m a 21 y/o cs undergrad student at texas tech university. i love
         building things and solving problems. i enjoy math, programming, and
-        cybersecurity. if i'm not coding, i'm probably riding mountain bikes,
-        exploring new tech, or finding ways to optimize my workspace.{" "}
+        cybersecurity. if i`&apos;`m not coding, i`&apos;`m probably riding mountain bikes,
+        exploring new tech, or finding ways to optimize my workspace.
       </p>
     </header>
   );
