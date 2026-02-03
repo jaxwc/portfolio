@@ -53,73 +53,168 @@
   }
 }
 
+/* Flexoki Color Palette - https://stephango.com/flexoki */
 :root {
-  --radius: 0.625rem;
-  --background: oklch(0.29 0.03 257);
-  --foreground: oklch(1 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 0.5rem;
+  
+  /* Flexoki Light (Paper) */
+  --background: #FFFCF0;
+  --foreground: #100F0F;
+  
+  /* Cards */
+  --card: #F2F0E5;
+  --card-foreground: #100F0F;
+  --popover: #F2F0E5;
+  --popover-foreground: #100F0F;
+  
+  /* Primary - Flexoki Cyan (Chuck/Tech vibe) */
+  --primary: #24837B;
+  --primary-foreground: #FFFCF0;
+  
+  /* Secondary - Flexoki Base 200 */
+  --secondary: #E6E4D9;
+  --secondary-foreground: #100F0F;
+  
+  /* Muted - Flexoki Base 150 */
+  --muted: #F2F0E5;
+  --muted-foreground: #878580;
+  
+  /* Accent - Flexoki Cyan */
+  --accent: #24837B;
+  --accent-foreground: #FFFCF0;
+  
+  /* Destructive - Flexoki Red */
+  --destructive: #AF3029;
+  
+  /* Borders - Flexoki Base 200 */
+  --border: #E6E4D9;
+  --input: #E6E4D9;
+  --ring: #24837B;
+  
+  /* Charts - Flexoki Colors */
+  --chart-1: #66800B; /* Green */
+  --chart-2: #24837B; /* Cyan */
+  --chart-3: #205EA6; /* Blue */
+  --chart-4: #5E409D; /* Purple */
+  --chart-5: #AF3029; /* Red */
+
+  /* Sidebar */
+  --sidebar: #F2F0E5;
+  --sidebar-foreground: #100F0F;
+  --sidebar-primary: #24837B;
+  --sidebar-primary-foreground: #FFFCF0;
+  --sidebar-accent: #E6E4D9;
+  --sidebar-accent-foreground: #100F0F;
+  --sidebar-border: #E6E4D9;
+  --sidebar-ring: #24837B;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Flexoki Dark (Black) */
+    --background: #100F0F;
+    --foreground: #CECDC3;
+    
+    /* Cards */
+    --card: #1C1B1B;
+    --card-foreground: #CECDC3;
+    --popover: #1C1B1B;
+    --popover-foreground: #CECDC3;
+    
+    /* Primary - Flexoki Cyan (Chuck/Tech vibe) */
+    --primary: #3AA99F; /* Lighter cyan for dark mode */
+    --primary-foreground: #100F0F;
+    
+    /* Secondary - Flexoki Base 850 */
+    --secondary: #1C1B1B;
+    --secondary-foreground: #CECDC3;
+    
+    /* Muted */
+    --muted: #1C1B1B;
+    --muted-foreground: #878580;
+    
+    /* Accent */
+    --accent: #3AA99F;
+    --accent-foreground: #100F0F;
+    
+    /* Destructive */
+    --destructive: #D14D41;
+    
+    /* Borders - Flexoki Base 800 */
+    --border: #282726;
+    --input: #282726;
+    --ring: #3AA99F;
+    
+    /* Charts */
+    --chart-1: #879A39;
+    --chart-2: #3AA99F;
+    --chart-3: #4385BE;
+    --chart-4: #8B7EC8;
+    --chart-5: #D14D41;
+    
+    /* Sidebar */
+    --sidebar: #100F0F;
+    --sidebar-foreground: #CECDC3;
+    --sidebar-primary: #3AA99F;
+    --sidebar-primary-foreground: #100F0F;
+    --sidebar-accent: #1C1B1B;
+    --sidebar-accent-foreground: #CECDC3;
+    --sidebar-border: #282726;
+    --sidebar-ring: #3AA99F;
+  }
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+    /* Flexoki Dark (Black) */
+    --background: #100F0F;
+    --foreground: #CECDC3;
+    
+    /* Cards */
+    --card: #1C1B1B;
+    --card-foreground: #CECDC3;
+    --popover: #1C1B1B;
+    --popover-foreground: #CECDC3;
+    
+    /* Primary - Flexoki Cyan (Chuck/Tech vibe) */
+    --primary: #3AA99F; /* Lighter cyan for dark mode */
+    --primary-foreground: #100F0F;
+    
+    /* Secondary - Flexoki Base 850 */
+    --secondary: #1C1B1B;
+    --secondary-foreground: #CECDC3;
+    
+    /* Muted */
+    --muted: #1C1B1B;
+    --muted-foreground: #878580;
+    
+    /* Accent */
+    --accent: #3AA99F;
+    --accent-foreground: #100F0F;
+    
+    /* Destructive */
+    --destructive: #D14D41;
+    
+    /* Borders - Flexoki Base 800 */
+    --border: #282726;
+    --input: #282726;
+    --ring: #3AA99F;
+    
+    /* Charts */
+    --chart-1: #879A39;
+    --chart-2: #3AA99F;
+    --chart-3: #4385BE;
+    --chart-4: #8B7EC8;
+    --chart-5: #D14D41;
+    
+    /* Sidebar */
+    --sidebar: #100F0F;
+    --sidebar-foreground: #CECDC3;
+    --sidebar-primary: #3AA99F;
+    --sidebar-primary-foreground: #100F0F;
+    --sidebar-accent: #1C1B1B;
+    --sidebar-accent-foreground: #CECDC3;
+    --sidebar-border: #282726;
+    --sidebar-ring: #3AA99F;
 }
 
 @layer base {

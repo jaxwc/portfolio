@@ -1,17 +1,15 @@
-import { Header } from "@/components/header"
-import { Work } from "@/components/work"
-import { Projects } from "@/components/projects"
-import { Blog } from "@/components/blog"
-import { Links } from "@/components/links"
+import { Header } from "@/components/header";
+import { Projects } from "@/components/projects";
+import { Experience } from "@/components/experience";
+import { Connect } from "@/components/connect";
 
 export default function HomePage() {
   return (
     <>
       <Header />
-      <Work />
       <Projects />
-      <Blog />
-      <Links />
+      <Experience />
+      <Connect />
     </>
-  )
+  );
 }

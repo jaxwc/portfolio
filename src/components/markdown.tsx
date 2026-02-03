@@ -28,7 +28,7 @@ export function Markdown() {
         return (
           <span
             key={idx}
-            className="flex items-center justify-between text-indigo-300"
+            className="flex items-center justify-between text-muted-foreground"
           >
             <Link href={`/posts/${slug}`}>{post.name}</Link>
             <p>{post.date}</p>

@@ -18,7 +18,7 @@ const links = [
 export function Links() {
   return (
     <section>
-      <h1 className="mb-4 text-2xl font-bold text-rose-400">
+      <h1 className="mb-4 text-2xl font-bold text-primary">
         <span className="mr-2">*</span>
         <span>links</span>
       </h1>
@@ -27,7 +27,7 @@ export function Links() {
           <Link
             key={link.title}
             href={link.href}
-            className="flex items-center gap-2 text-indigo-400 transition-transform duration-200 hover:-translate-y-1"
+            className="flex items-center gap-2 text-primary transition-transform duration-200 hover:-translate-y-1"
           >
             {link.title}
           </Link>

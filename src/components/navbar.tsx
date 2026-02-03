@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 const Navbar = () => {
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
@@ -21,9 +22,6 @@ const Navbar = () => {
         case "h":
           router.push("/");
           break;
-        case "b":
-          router.push("/blog");
-          break;
         case "p":
           router.push("/projects");
           break;
@@ -35,22 +33,27 @@ const Navbar = () => {
   }, [router]);
 
   return (
-    <nav className="flex items-center justify-between mb-8 ">
-      <div className="flex space-x-4">
-        <Link href="/" className="text-indigo-400 hover:animate-wiggle text-md">
+    <nav className="flex items-center justify-between mb-6">
+      <div className="flex space-x-6 text-sm">
+        <Link
+          href="/"
+          className={`transition-colors duration-200 ${
+            pathname === "/"
+              ? "text-primary"
+              : "text-muted-foreground hover:text-primary"
+          }`}
+        >
           [h] home
         </Link>
         <Link
           href="/projects"
-          className="text-indigo-400 hover:animate-wiggle text-md"
+          className={`transition-colors duration-200 ${
+            pathname === "/projects"
+              ? "text-primary"
+              : "text-muted-foreground hover:text-primary"
+          }`}
         >
           [p] projects
-        </Link>
-        <Link
-          href="/blog"
-          className="text-indigo-400 hover:animate-wiggle text-md"
-        >
-          [b] blog
         </Link>
       </div>
     </nav>

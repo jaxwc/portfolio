@@ -11,7 +11,7 @@ export default function BlogPage() {
 
   return (
     <section className="mb-8 space-y-4">
-      <h1 className="mb-4 text-4xl font-bold text-rose-400">
+      <h1 className="mb-4 text-4xl font-bold text-primary">
         <span className="mr-2">*</span>
         <span ref={ref} />
       </h1>
